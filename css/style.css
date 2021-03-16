@@ -3,3 +3,19 @@
   }
    
 
+  .add-staff_form{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+
+.back_refresh{
+  display:flex;
+  justify-content:space-between;
+  padding:1 rem;
+}
+
+.fa-long-arrow-alt-left, .fa-redo-alt{
+ color:grey;
+}
