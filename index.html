@@ -15,6 +15,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
+	<link class="stylesheet" href="css/style.css" rel="stylesheet">
 	<script src="js/settings.js"></script>
 </head>
 
@@ -31,11 +32,11 @@
 
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
-						Welcome, ADMIN
+						<h3>Welcome, ADMIN</h>
 					</li>
 					<li class="sidebar-item active">
 						<a href="index.html"  class="sidebar-link">
-              <i class="align-middle"></i> <i class="fas fa-tv"></i><span class="align-middle">Dashboards</span>
+              <i class="align-middle"></i> <i class="fas fa-tv"></i><span class="align-middle">Dashboard</span>
             </a>
 					</li>
 					<li class="sidebar-item">
@@ -43,8 +44,8 @@
               <i class="align-middle"></i> <i class="fas fa-user-md"></i><span class="align-middle">Medical Staff</span>
             </a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-staff.html">Add Staff</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="staff-list.html">Staff List</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="add-staff.html">- Add Staff</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="staff-list.html">- Staff List</a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -52,8 +53,8 @@
               <i class="align-middle"></i><i class="fas fa-hospital-user"></i> <span class="align-middle">Patient</span>
             </a>
 						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-patient.html">Add Patient</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="patient-list.html">Patient List</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="add-patient.html">- Add Patient</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="patient-list.html">- Patient List</a></li>
 					
 						</ul>
 					</li>
@@ -62,8 +63,8 @@
               <i class="align-middle"></i><i class="fas fa-clipboard"></i> <span class="align-middle">Chart</span>
             </a>
 						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-chart.html">Add Chart</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="chart-list.html">Chart List</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="add-chart.html">- Add Chart</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="chart-list.html">- Chart List</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -77,9 +78,9 @@
 		<div class="col-auto d-none d-sm-block">
 			<h1></h1>
 		</div>
-		<ul class="navbar-nav navbar-align">
-			<i class="fas fa-cog"  ></i>
-		</ul>
+		<a class="navbar-nav navbar-align" href="setting.html">
+			<i class="fas fa-cog fa-2x"></i>
+		</a>
 			</nav>
 			<main class="content">
 				<h1>XX Hospital Management System</h1>
