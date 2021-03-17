@@ -23,3 +23,12 @@
 .fa-sign-out-alt{
   color:black;
 }
+
+.dashboard_quickaccess_title{
+  margin-left:1rem;
+  margin-top:0.5rem;
+}
+
+.fas, .far{
+  color:black;
+}
