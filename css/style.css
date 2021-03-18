@@ -57,3 +57,8 @@
   display:flex;
   justify-content:space-around;
 }
+
+.staff-list_search{
+  display:flex;
+  justify-content:space-between;
+}

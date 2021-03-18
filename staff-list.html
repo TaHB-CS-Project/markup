@@ -96,98 +96,99 @@
                 <h5>Staff List</h5>
             </div>
         </div>
-
+<br>
             <div class="back_refresh">
                 <a href="dashboard.html" ><i class="fas fa-2x fa-long-arrow-alt-left"> </i></a>
-                <a href="add-chart.html" ><i class="fas fa-2x fa-redo-alt"></i></a>
+                <a href="staff-list.html" ><i class="fas fa-2x fa-redo-alt"></i></a>
               </div>
         <br>
         <br>
-        <br>
-        <div>
-            <div>
-            <span>Show </span> 
-            <select type="name"  id="entries" placeholder="10">
-            <option>10</option>
-            <option>20</option>
-            <option>30</option>
+
+<div class="staff-list_search">
+    <div class="staff-list_search_left">
+        <span>Show</span>
+            <select type="" >
+              <option>10</option>
+              <option>20</option>
+              <option>30</option>
+              <option>50</option>
             </select>
-            <span style="margin-left:10px;">entries</span> 
-            </div>
-            <br>
-            <div>
-                <input type="text" placeholder="search here">
-            </div>
-        </div>
-        <br>
-        <br>
-        <div>
-            <table class="styled-table">
-                <thead>
+            <span>entries</span>   
+    </div>
+	<div class="staff-list_right">
+		<h5 id="procedure_search_left_search">Search: </idh5>
+		<input class="symtom_search_search_box"type="text" placeholder="">
+	</div>
+</div>
+<br>
+
+
+
+            <div class="procedure_table_right table-responsive-sm">
+                <table class="table table-bordered">
+                  <thead>
                     <tr>
-                        <th>No</th>
-                        <th>Name</th>
-                        <th>Department</th>
-                        <th>Role</th>
-                        <th>Staff ID Number</th>
+                      <th scope="col" class="text-center">Staff ID</th>
+                      <th scope="col"class="text-center">Name</th>
+                      <th scope="col"class="text-center">Department</th>
+                      <th scope="col"class="text-center">Role</th>
                     </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>01</td>
-                        <td>Anna</td>
-                        <td>Cardiology</td>
-                        <td>Nurse</td>
-                        <td>21345</td>
+                  </thead>
+                  <tbody>
+                    <tr>			
+                      <td>01745</td>
+                      <td>Ivor Thompson</td>
+                      <td>Cardiology</td>
+                      <td>Doctor</td>
                     </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Joy</td>
+                    <tr>			
+                        <td>02113</td>
+                        <td>William Brown</td>
                         <td>Dermatology</td>
                         <td>Nurse</td>
-                        <td>23466</td>
-                    </tr>
-                    <tr>
-                        <td>03</td>
-                        <td>Michael</td>
-                        <td>General Surgery</td>
-                        <td>Doctor</td>
-                        <td>54336</td>
-                    </tr>
-                    <tr>
-                        <td>04</td>
-                        <td>Daniel</td>
-                        <td>Hermatology</td>
-                        <td>Trainee</td>
-                        <td>23353</td>
-                    </tr>
-                    <tr>
+                      </tr>
+                      <tr>			
+                        <td>08721</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
+                      </tr>
+                      <tr>			
+                        <td>03323</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                    </tr>
-                    <tr>
+                      </tr>
+                      <tr>			
+                        <td>03829</td>
                         <td></td>
                         <td></td>
                         <td></td>
+                      </tr>
+                      <tr>			
+                        <td>02936</td>
                         <td></td>
                         <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                        <td></td>
+                      </tr>
+                      <tr>			
+                        <td>08471</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+
+                
+            
+                    
+                  </tbody>
+                </table>
+              </div>
+
+
+
+
 	</div>
-
-
-
 	<script src="js/app.js"></script>
 </body>
 
