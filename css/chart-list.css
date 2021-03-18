@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+  .chart-list_search{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .chart-list_right{
+      display:flex;
+  }
+  

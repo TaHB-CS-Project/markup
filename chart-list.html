@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
 	<link class="stylesheet" href="css/style.css" rel="stylesheet">
+    <link class="stylesheet" href="css/chart-list.css" rel="stylesheet">
 	<script src="js/settings.js"></script>
 </head>
 
@@ -101,104 +102,145 @@
         <br>
             <div class="back_refresh">
                 <a href="dashboard.html" ><i class="fas fa-2x fa-long-arrow-alt-left"> </i></a>
-                <a href="add-patient.html" ><i class="fas fa-2x fa-redo-alt"></i></a>
+                <a href="chart-list.html" ><i class="fas fa-2x fa-redo-alt"></i></a>
               </div>
         <br>
         <br>
-        <br>
-        <div>
-            <div>
-            <span>Show </span> 
-            <select type="name"  id="entries" placeholder="10">
-            <option>10</option>
-            <option>20</option>
-            <option>30</option>
-            </select>
-            <span style="margin-left:10px;">entries</span> 
+        <div class="chart-list_search">
+            <div class="chart-list_search_left">
+                <span>Show</span>
+                    <select type="" >
+                      <option>10</option>
+                      <option>20</option>
+                      <option>30</option>
+                      <option>50</option>
+                    </select>
+                    <span>entries</span>   
             </div>
-            <br>
-            <div>
-                <input type="text" placeholder="search here">
+            <div class="chart-list_right">
+                <span>Search by &nbsp </span>
+                
+             <select class="chart-list_search_hospital" >
+                <option>Hospital</option>
+                <option>---------</option>
+                <option>Hospital 1</option>
+                <option>Hospital 2</option>
+                <option>Hospital 3</option>
+                <option>Hospital 4</option>
+            </select>
+
             </div>
         </div>
         <br>
-        <br>
-        <div>
-            <table class="styled-table">
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>EmployeeID</th>
-                        <th>RecordID</th>
-                        <th>Procedure</th>
-                        <th>Outcome</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>02/26/21</td>
-                        <td>0704</td>
-                        <td>01</td>
-                        <td>X-ray</td>
-                        <td>Success</td>
-                        <td><button class="btn btn-primary col text-center">View Detail</button></td>
-                    </tr>
-                    <tr>
-                        <td>02/28/21</td>
-                        <td>3029</td>
-                        <td>02</td>
-                        <td>MRI</td>
-                        <td>Complication</td>
-                        <td><button class="btn btn-primary col text-center">View Detail</button></td>
-                    </tr>
-                    <tr>
-                        <td>03/01/21</td>
-                        <td>9485</td>
-                        <td>03</td>
-                        <td>X-ray</td>
-                        <td>Complication</td>
-                        <td><button class="btn btn-primary col text-center">View Detail</button></td>
-                    </tr>
-                    <tr>
-                        <td>03/10/21</td>
-                        <td>04875</td>
-                        <td>04</td>
-                        <td>CT-Scan</td>
-                        <td>Success</td>
-                        <td><button class="btn btn-primary col text-center">View Detail</button></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-	</div>
+        
+        
+        
+                    <div class="procedure_table_right table-responsive-sm">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th scope="col" class="text-center">Date</th>
+                              <th scope="col"class="text-center">D.ID</th>
+                              <th scope="col"class="text-center">R.ID</th>
+                              <th scope="col"class="text-center">Symptom</th>
+                              <th scope="col"class="text-center">Procedure</th>
+                              <th scope="col"class="text-center">Outcome</th>
+                              <th scope="col"class="text-center">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>			
+                              <td> 3/18/21</td>
+                              <td>09182 </td>
+                              <td> 18293</td>
+                              <td> headache </td>
+                              <td> Advil</td>
+                              <td> Improved </td>
+                              <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                            </tr>
+                            <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                              <tr>			
+                                <td>3/18/21</td>
+                                <td></td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td> </td>
+                                <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                              </tr>
+                           		
+                            
+        
+                        
+                    
+                            
+                          </tbody>
+                        </table>
+                      </div>
+        
+                      <br><br><br><br><br>
+                      <div class="page_indicator_bottom">
+                          <a class="float-right next_page" href="chart-list.html">Next Page <i class="fas fa-arrow-right"></i></a>
+                        </div>
 
 
 
 	<script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 
 </html>
