@@ -32,3 +32,18 @@
 .fas, .far{
   color:black;
 }
+
+.content_heading{
+  display:flex;
+  padding-bottom:1rem;
+  border-bottom: 1px solid black;
+}
+
+.content_heading_title{
+  margin-left: 1rem;
+  margin-top:0.2rem;
+}
+
+.next_page{
+  color:black;
+}
