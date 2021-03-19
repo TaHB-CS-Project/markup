@@ -4,12 +4,12 @@
 
 
 
-  .chart-list_search{
+  .record-list_search{
     display:flex;
     justify-content:space-between;
   }
 
-  .chart-list_right{
+  .record-list_right{
       display:flex;
   }
   
