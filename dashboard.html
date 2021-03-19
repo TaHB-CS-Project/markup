@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="TaHB Dashboard page">
 	<script src="https://kit.fontawesome.com/9bdec1f6e1.js" crossorigin="anonymous"></script>
-	<meta name="author: JoyJaewon" content="Bootlab">
+	<meta name="author: Joy,Anna" content="Bootlab">
 	<title>TaHB Dashboard page</title>
 
 	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html" />
@@ -46,29 +46,32 @@
               <i class="align-middle"></i> <i class="fas fa-user-md"></i><span class="align-middle">Medical Staff</span>
             </a>
 						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-staff.html">- Add Staff</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="staff-list.html">- Staff List</a></li>
 						</ul>
 					</li>
+					
+					<li class="sidebar-item">
+						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle"></i><i class="fas fa-clipboard"></i> <span class="align-middle">Record</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="add-record.html">- Add Record</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="record-draft.html">- Record Draft</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="Record-list.html">- Record List</a></li>
+						</ul>
+					</li>
+
 					<li class="sidebar-item">
 						<a href="#documentation" data-toggle="collapse" class="sidebar-link collapsed">
-              <i class="align-middle"></i><i class="fas fa-hospital-user"></i> <span class="align-middle">Patient</span>
+              <i class="align-middle"></i><i class="fas fa-database"></i> <span class="align-middle">Data</span>
             </a>
 						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-patient.html">- Add Patient</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="patient-list.html">- Patient List</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="symptom.html">- Symptom</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="procedure.html">- Procedure</a></li>
 					
 						</ul>
 					</li>
-					<li class="sidebar-item">
-						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
-              <i class="align-middle"></i><i class="fas fa-clipboard"></i> <span class="align-middle">Chart</span>
-            </a>
-						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="add-chart.html">- Add Chart</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="chart-list.html">- Chart List</a></li>
-						</ul>
-					</li>
+
 				</ul>
 			</div>
 		</nav>
@@ -80,12 +83,80 @@
 		<div class="col-auto d-none d-sm-block">
 			<h1></h1>
 		</div>
-		<a class="navbar-nav navbar-align" href="setting.html">
-			<i class="fas fa-cog fa-2x"></i>
+		<a class="navbar-nav navbar-align" href="index.html">
+			<i class="fas fa-sign-out-alt fa-2x"></i>
 		</a>
+		
+		
 			</nav>
 			<main class="content">
-				<h1>XX Hospital Management System</h1>
+				<div class="row">
+
+					
+					<div class="col-12 col-sm-6 col-md d-flex">
+						<a href=add-Record.html>
+							<div class="card flex-fill">
+							<div class="card-body py-4">
+								<div class="media">
+									<i class="fas fa-notes-medical fa-3x"></i>
+									<div class="media-body">
+										<h3 class=dashboard_quickaccess_title>Add Record</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						</a>
+					</div>
+
+						<div class="col-12 col-sm-6 col-md d-flex">
+						<a href=record-draft.html>
+						<div class="card flex-fill">
+							<div class="card-body py-4">
+								<div class="media">
+									<i class="far fa-clipboard fa-3x"></i>
+									<div class="media-body">
+										<h3 class=dashboard_quickaccess_title>Record Draft</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+					
+					<div class="col-12 col-sm-6 col-md d-flex">
+						<a href="record-list.html">
+						<div class="card flex-fill">
+							<div class="card-body py-4">
+								<div class="media">
+									<i class="fas fa-list fa-3x"></i>
+									<div class="media-body">
+										<h3 class=dashboard_quickaccess_title>Record List</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md d-flex">
+						<a href=staff-list.html>
+						<div class="card flex-fill">
+							<div class="card-body py-4">
+								<div class="media">
+									<i class="fas fa-user-md fa-3x"></i>
+									<div class="media-body">
+										<h3 class=dashboard_quickaccess_title>Staff List</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+
+		
+					
+
+				</div>
 			</main>
 		</div>
 	</div>
