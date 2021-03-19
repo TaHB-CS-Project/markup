@@ -2,8 +2,6 @@
     box-sizing: border-box;
   }
 
-
-
   .record-list_search{
     display:flex;
     justify-content:space-between;
