@@ -3,57 +3,19 @@
   }
    
 
-
+  .add-staff_form{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
 
 .back_refresh{
   display:flex;
   justify-content:space-between;
-  padding:1rem;
+  padding:1 rem;
 }
 
 .fa-long-arrow-alt-left, .fa-redo-alt{
  color:grey;
-}
-
-.fa-sign-out-alt{
-  color:black;
-}
-
-.dashboard_quickaccess_title{
-  margin-left:1rem;
-  margin-top:0.5rem;
-}
-
-.fas, .far{
-  color:black;
-}
-
-.content_heading{
-  display:flex;
-  padding-bottom:1rem;
-  border-bottom: 1px solid black;
-}
-
-.content_heading_title{
-  margin-left: 1rem;
-  margin-top:0.2rem;
-}
-
-.next_page{
-  color:black;
-}
-
-.record-draft_table{
-  padding-left:20px;
-  padding-right:20px;
-} 
-
-.add-chart_button{
-  display:flex;
-  justify-content:space-around;
-}
-
-.staff-list_search{
-  display:flex;
-  justify-content:space-between;
 }
