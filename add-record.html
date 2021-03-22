@@ -193,9 +193,92 @@
 
 
 <div class="add-chart_button">
-    <a href="add-record.html"><button type="button" class="btn btn-primary btn-lg">Save</button></a>
-    <a href="add-record.html"><button type="button" class="btn btn-primary btn-lg">Submit</button></a>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saverecord">
+        Save
+      </button>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitrecord">
+        Submit
+      </button>
 </div>
+
+
+<div class="modal fade" id="saverecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Save Record</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            The record has been saved
+        </div>
+        
+        <div class="modal-footer">
+            <a href="record-draft.html"><button type="button" class="btn btn-secondary">Record Draft List</button></a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#1e88e5;">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="submitrecord" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Submit record</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            <br>  
+            Do you want to submit this record?
+            <br>
+            <br>
+           
+        
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit">
+                Submit
+              </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="submit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Submitted</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            <br>
+            <br>
+            The record has been submitted
+            <br>
+            <br>
+            <br>
+        </div>
+        
+        <div class="modal-footer">
+          <a href="record-list.html"><button type="button" class="btn btn-secondary">Record List</button></a>
+          <a href="add-record.html"><button type="button" class="btn btn-secondary" style="background-color:#1e88e5;">Close</button></a> 
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 </form>
