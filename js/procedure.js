@@ -20,3 +20,14 @@ function editProcedure(){
 function updateProcedure() {
   document.getElementById("procedure").innerHTML = procedure1;
 }
+
+
+$(document).ready(function() { 
+  $("#searchData").on("keyup", function() { 
+      var value = $(this).val().toLowerCase(); 
+      $("#procedureData tr").filter(function() { 
+          $(this).toggle($(this).text() 
+          .toLowerCase().indexOf(value) > -1) 
+      }); 
+  }); 
+}); 
