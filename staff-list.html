@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
 	<link class="stylesheet" href="css/style.css" rel="stylesheet">
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/settings.js"></script>
 </head>
 
@@ -114,7 +115,7 @@
     </div>
 	<div class="staff-list_right">
 		<h5 id="procedure_search_left_search">Search: </idh5>
-		<input class="symtom_search_search_box"type="text" placeholder="">
+		<input class="symtom_search_search_box"type="text" id="searchData" style="width:15rem; height:1.5rem;" placeholder=" Staff ID/ Name/ Department/ Role">
 	</div>
 </div>
 <br>
@@ -131,7 +132,7 @@
                       <th scope="col"class="text-center">Role</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="staffData">
                     <tr>			
                       <td>01745</td>
                       <td>Ivor Thompson</td>
@@ -190,6 +191,7 @@
 
 	</div>
 	<script src="js/app.js"></script>
+  <script src="js/staff-list.js"></script>
 </body>
 
 </html>
