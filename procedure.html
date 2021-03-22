@@ -112,7 +112,9 @@
 		<input class="symtom_search_search_box"type="text" placeholder="">
 	</div>
 	<div class="sprocedure_search_right">
-		<a href="procedure.html"></a><button type="button" class="btn btn-primary">New</button></a>
+		<a href="procedure.html"></a><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newprocedure">
+			New
+		  </button></a>
 	</div>
 		</div>
 
@@ -202,6 +204,28 @@
 			</div>
 
 
+
+			<div class="modal fade" id="newprocedure" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title" id="exampleModalLongTitle">Add New Procedure</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+		
+					<div class="modal-body">
+						<input type="symptom" class="form-control" placeholder="Enter procedure">
+					</div>
+					
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Add</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
 
 
 	<br><br><br><br><br>

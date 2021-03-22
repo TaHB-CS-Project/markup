@@ -107,7 +107,9 @@
 		<input class="symtom_search_search_box"type="text" placeholder="">
 	</div>
 	<div class="symptom_search_right">
-		<a href="symptom.html"></a><button type="button" class="btn btn-primary">New</button></a>
+		<a href="symptom.html"></a><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newsymptom">
+			New
+		  </button></a>
 	</div>
 		</div>
 
@@ -124,7 +126,9 @@
 			<tbody>
 			  <tr">			
 				<td>headache</td>
-				<td class="text-center"><button type="button" class="btn btn-primary">edit</button></td>
+				<td class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+					edit
+				  </button></td>
 			  </tr>
 			  <tr>			
 				<td>stomachache</td>
@@ -144,9 +148,12 @@
 			  </tr>
 			  <tr>			
 				<td>muscle pain</td>
-				<td class="text-center"><button type="button" class="btn btn-primary">edit</button></td>
+				<td class="text-center"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+					edit
+				  </button></td>
 			  </tr>
 			  
+
 
 			</tbody>
 		  </table>
@@ -191,6 +198,58 @@
 		  </table>
 		</div>
 	</div>
+	
+
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLongTitle">Edit Symptom</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+	  <div class="modal fade" id="newsymptom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLongTitle">Add New Symptom</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+	
+				<input type="symptom" class="form-control" placeholder="Enter symptom">
+	
+			
+
+
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Add</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
 
 
 	<br><br><br><br><br>
@@ -204,6 +263,7 @@
 	</div>
 
 	<script src="js/app.js"></script>
+	<script src="js/symptom.js"></script>
 </body>
 
 </html>
