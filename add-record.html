@@ -155,18 +155,26 @@
         <input type="date" class="form-control" id="date">
         </div>
     </div>
-  <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label">Symptom</label>
-      <div class="col-sm-10">
-          <input type="text" class="form-control" id="Symptom" placeholder="Symptom">
-      </div>
-  </div>
-  <div class="form-group row">
-      <label for="colFormLabel" class="col-sm-2 col-form-label">Procedure</label>
-      <div class="col-sm-10">
-          <input type="text" class="form-control" id="procedure" placeholder="Procedure">
-      </div>
-  </div>
+   
+    <div class="form-group row">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Symptom</label>
+        <div class="col-sm-10 symptom_wrapper">
+          <div style="display:flex">
+             <input type="text" class= "form-control" name="symptom[]" id="Symptom" placeholder="Symptom">
+             <a href="javascript:void(0);" class="add_symptom_button" title="Add field"><i class="fas fa-2x fa-plus-circle"></i></a>
+          </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+	 <label for="colFormLabel" class="col-sm-2 col-form-label">Procedure</label>
+	 <div class="col-sm-10 procedure_wrapper">
+	    <div style="display:flex">
+	       <input type="text" class="form-control" name="procedure[]" id="procedure" placeholder="Procedure">
+	       <a href="javascript:void(0);" class="add_procedure_button" title="Add field"><i class="fas fa-2x fa-plus-circle"></i></a>
+            </div>
+	 </div>
+     </div>
 
 
   <div class="form-group row">
