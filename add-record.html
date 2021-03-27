@@ -64,7 +64,7 @@
               <i class="align-middle"></i><i class="fas fa-database"></i> <span class="align-middle">Data</span>
             </a>
 						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="symptom.html">- Symptom</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="diagnosis.html">- Diagnosis</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="procedure.html">- Procedure</a></li>
 					
 						</ul>
@@ -138,7 +138,7 @@
     <div class="form-group row">
         <label for="colFormLabel" class="col-sm-2 col-form-label">Weight</label>
         <div class="col-sm-5">
-        <input type="name" class="form-control" id="weight" placeholder="weight">
+        <input type="name" class="form-control" id="weight" placeholder="Weight">
         </div>
         <div class="col-sm-5">
             <select type="name" class="form-control" id="gender">
@@ -157,11 +157,24 @@
     </div>
    
     <div class="form-group row">
-        <label for="colFormLabel" class="col-sm-2 col-form-label">Symptom</label>
-        <div class="col-sm-10 symptom_wrapper">
+        <label for="colFormLabel" class="col-sm-2 col-form-label">Diagnosis</label>
+        <div class="col-sm-10 diagnosis_wrapper">
           <div style="display:flex">
-             <input type="text" class= "form-control" name="symptom[]" id="Symptom" placeholder="Symptom">
-             <a href="javascript:void(0);" class="add_symptom_button" title="Add field"><i class="fas fa-2x fa-plus-circle"></i></a>
+            <select name="diagnosis[]" class="form-control" id="diagnosis">
+              <option>Choose one</option>
+              <option>-----------</option>
+              <option>Diagnosis1</option>
+              <option>Diagnosis2</option>
+              <option>Diagnosis3</option>
+              <option>Diagnosis4</option>
+              <option>Diagnosis5</option>
+              <option>Diagnosis6</option>
+              <option>Diagnosis7</option>
+              <option>Diagnosis8</option>
+              <option>Diagnosis9</option>
+              <option>Diagnosis10</option>
+              </select>
+             <a href="javascript:void(0);" class="add_diagnosis_button" title="Add field"><i class="fas fa-2x fa-plus-circle"></i></a>
           </div>
         </div>
     </div>
@@ -170,7 +183,20 @@
 	 <label for="colFormLabel" class="col-sm-2 col-form-label">Procedure</label>
 	 <div class="col-sm-10 procedure_wrapper">
 	    <div style="display:flex">
-	       <input type="text" class="form-control" name="procedure[]" id="procedure" placeholder="Procedure">
+         <select name="procedure[]" class="form-control" id="procedure">
+          <option>Choose one</option>
+          <option>-----------</option>
+          <option>Intubation</option>
+          <option>UVC</option>
+          <option>UAC</option>
+          <option>PICC</option>
+          <option>Peritoneal tap</option>
+          <option>Urinary catheterization</option>
+          <option>Lumbar puncture</option>
+          <option>Ventricular tap</option>
+          <option>PIV</option>
+          <option>Chest tube placement</option>
+          </select>
 	       <a href="javascript:void(0);" class="add_procedure_button" title="Add field"><i class="fas fa-2x fa-plus-circle"></i></a>
             </div>
 	 </div>
@@ -302,3 +328,4 @@
 </body>
 
 </html>
+
