@@ -1,20 +1,20 @@
 $(document).ready(function(){
     var maxField = 10; 
-    var add_symptom_button = $('.add_symptom_button'); 
-    var symptom_wrapper = $('.symptom_wrapper'); 
-    var symptomHTML = '<div style="display:flex;"><input type="text" class= "form-control" name="symptom[]" id="Symptom" placeholder="Symptom"><a href="javascript:void(0);" class="remove_symptom_button" title="Remove field"><i class="fas fa-2x fa-minus-circle"></i></a></div>'; 
+    var add_diagnosis_button = $('.add_diagnosis_button'); 
+    var diagnosis_wrapper = $('.diagnosis_wrapper'); 
+    var diagnosisHTML = '<div style="display:flex;"><select name="diagnosis[]" class="form-control" id="diagnosis"><option>Choose one</option><option>-----------</option><option>Intubation</option><option>UVC</option><option>UAC</option><option>PICC</option><option>Peritoneal tap</option><option>Urinary catheterization</option><option>Lumbar puncture</option><option>Ventricular tap</option><option>PIV</option><option>Chest tube placement</option></select><a href="javascript:void(0);" class="remove_diagnosis_button" title="Remove field"><i class="fas fa-2x fa-minus-circle"></i></a></div>'; 
     var x = 1; //Initial field counter is 1
     
 
-    $(add_symptom_button).click(function(){
+    $(add_diagnosis_button).click(function(){
         if(x < maxField){ 
             x++; 
-            $(symptom_wrapper).append(symptomHTML);
+            $(diagnosis_wrapper).append(diagnosisHTML);
         }
     });
     
 
-    $(symptom_wrapper).on('click', '.remove_symptom_button', function(e){
+    $(diagnosis_wrapper).on('click', '.remove_diagnosis_button', function(e){
         e.preventDefault();
         $(this).parent('div').remove(); 
         x--; 
@@ -25,7 +25,7 @@ $(document).ready(function(){
     var maxField = 10;
     var add_procedure_button = $('.add_procedure_button');
     var procedure_wrapper = $('.procedure_wrapper'); 
-    var procedureHTML = '<div style="display:flex;"><input type="text" class= "form-control" name="procedure[]" id="Procedure" placeholder="Procedure"><a href="javascript:void(0);" class="remove_procedure_button" title="Remove field"><i class="fas fa-2x fa-minus-circle"></i></a></div>';
+    var procedureHTML = '<div style="display:flex;"><select name="procedure[]" class="form-control" id="procedure"><option>Choose one</option><option>-----------</option><option>Intubation</option><option>UVC</option><option>UAC</option><option>PICC</option><option>Peritoneal tap</option><option>Urinary catheterization</option><option>Lumbar puncture</option><option>Ventricular tap</option><option>PIV</option><option>Chest tube placement</option></select><a href="javascript:void(0);" class="remove_procedure_button" title="Remove field"><i class="fas fa-2x fa-minus-circle"></i></a></div>';
     var y = 1; 
     
 
