@@ -3,22 +3,22 @@ $('#myModal').on('shown.bs.modal', function () {
   })
   
 /*Functions for editing the HTML*/
-var symptom1;
-document.getElementById("newSymptom").onclick=editSymptom;
+var diagnosis1;
+document.getElementById("newDiagnosis").onclick=editDiagnosis;
 
 
-function editSymptom(){
-  symptom1 = prompt("Edit the symptom: ");
-  if(symptom1===null){
-   console.log(document.getElementById("symptom").innerHTML);
+function editDiagnosis(){
+  diagnosis1 = prompt("Edit the diagnosis: ");
+  if(diagnosis1===null){
+   console.log(document.getElementById("diagnosis").innerHTML);
   }
   else{
-  updateSymptom();
+  updateDiagnosis();
   }
 }
 
-function updateSymptom() {
-  document.getElementById("symptom").innerHTML = symptom1;
+function updateDiagnosis() {
+  document.getElementById("diagnosis").innerHTML = diagnosis1;
 }
 
 /*Functions for editing the HTML ends*/
@@ -29,7 +29,7 @@ function updateSymptom() {
 $(document).ready(function() { 
   $("#searchData").on("keyup", function() { 
       var value = $(this).val().toLowerCase(); 
-      $("#symptomData tr").filter(function() { 
+      $("#diagnosisData tr").filter(function() { 
           $(this).toggle($(this).text() 
           .toLowerCase().indexOf(value) > -1) 
       }); 
