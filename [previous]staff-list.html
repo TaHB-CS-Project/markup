@@ -102,48 +102,92 @@
         <br>
         <br>
 
-
-<main class="content" style="margin-top:-20px;"> 
-  <div class="container-fluid p-0">
-
-    <h1 class="h3 mb-3">--Data from Backend in JSON form using AJAX--</h1>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title"></h5>
-          <div class="card-body">
-            <table id="datatables-ajax" class="table table-striped" style="width:100%">
-              <thead>
-                <tr>
-                  <th>Staff ID</th>
-                  <th>Name</th>
-                  <th>Department</th>
-                  <th>Role</th>
-                  <th>Supervisor</th>
-                </tr>
-              </thead>
-              
-            </table>
-          </div>
-        </div>
-      </div>
+<div class="staff-list_search">
+    <div class="staff-list_search_left">
+        <span>Show</span>
+            <select type="" >
+              <option>10</option>
+              <option>20</option>
+            </select>
+            <span>entries</span>   
     </div>
-
-  </div>
-</main>
-        
-
-
-
-
+	<div class="staff-list_right">
+		<h5 id="procedure_search_left_search">Search: </idh5>
+		<input class="symtom_search_search_box"type="text" id="searchData" style="width:15rem; height:1.5rem;" placeholder=" Staff ID/ Name/ Department/ Role">
+	</div>
+</div>
+<br>
 
 
 
+            <div class="procedure_table_right table-responsive-sm">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-center">Staff ID</th>
+                      <th scope="col"class="text-center">Name</th>
+                      <th scope="col"class="text-center">Department</th>
+                      <th scope="col"class="text-center">Role</th>
+                      <th scope="col"class="text-center">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody id="staffData">
+                    <tr>			
+                      <td>01745</td>
+                      <td>Ivor Thompson</td>
+                      <td>Cardiology</td>
+                      <td>Doctor</td>
+                      <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                    </tr>
+                    <tr>			
+                        <td>02113</td>
+                        <td>William Brown</td>
+                        <td>Dermatology</td>
+                        <td>Nurse</td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
+                      <tr>			
+                        <td>08721</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
+                      <tr>			
+                        <td>03323</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
+                      <tr>			
+                        <td>03829</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
+                      <tr>			
+                        <td>02936</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
+                      <tr>			
+                        <td>08471</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="text-center"><button type="button" class="btn btn-primary">View</button></td>
+                      </tr>
 
-
-
+                
+            
+                    
+                  </tbody>
+                </table>
+              </div>
 
               <br><br><br><br><br>
               <div class="page_indicator_bottom">
@@ -154,11 +198,6 @@
 	</div>
 	<script src="js/app.js"></script>
   <script src="js/staff-list.js"></script>
-  <script>
-		$('#datatables-ajax').DataTable({
-			"ajax": 'tables-datatables-ajax.json'
-		});
-	</script>
 </body>
 
 </html>

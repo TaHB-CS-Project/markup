@@ -2,7 +2,7 @@ var ctx = document.getElementById('diagnosis_chart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['A', 'B', 'C', 'D', 'E', 'F'],
         datasets: [{
             label: 'Diagnosis',
             data: [12, 19, 3, 5, 2, 3],
@@ -39,13 +39,13 @@ var myChart = new Chart(ctx, {
 
 
 
-var ctx = document.getElementById('symptom_chart').getContext('2d');
+var ctx = document.getElementById('procedure_chart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['appendectomy', 'catarac surgery', 'c-section', 'ct scan', 'echocardiogram', 'heart bypass surgery'],
         datasets: [{
-            label: 'Symptom',
+            label: 'Procedure',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
