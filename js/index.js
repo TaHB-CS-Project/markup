@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#myform").validate({
+    $("login_form").validate({
         rules: {
             "email":{
                 "required":true,
@@ -19,6 +19,8 @@ $(document).ready(function(){
             submitHandler: subform
         }
     })
+
+
     function subform(){
     var data=$("#login_form").serialize();
     $.ajax({
@@ -40,7 +42,7 @@ $(document).ready(function(){
             }
             else{
                alert(jsonData.confirm);
-               //add code here
+               $("#info").html("<p style='color:blue; font-weight:bold'> Login Successful</p>");
                displayLogin();
             }
         },
