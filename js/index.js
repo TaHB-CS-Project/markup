@@ -1,36 +1,13 @@
-$(document).ready(function(){
-    $("login_form").validate({
-        rules: {
-            "email":{
-                "required":true,
-                "email":true
-            },
-            "password":{
-                "required":true
-            }
-        },
-        messages:{
-            password:{
-                required:"Please enter your password"
-            },
-            email:{
-                required:"Please enter your email"
-            },
-            submitHandler: subform
-        }
-    })
-
-
     function subform(){
     var data=$("#login_form").serialize();
     $.ajax({
         type:'POST',
-        url:'call.go'+'?rand=' +newDate().getTime(),
+        url:'user.go'+'?rand=' +newDate().getTime(),
         async:true,
         dataType:"json",
         data:{
-            email: $(`#email`).val(),
-            password: $(`#password`).val()
+            username: $(`#email`).val(),
+            password_hash: $(`#password`).val()
         },
         beforeSend: function(){
             $("#info").fadeOut();
@@ -58,4 +35,4 @@ function displayErrors(errors) {
 		if (error != 'indexOf') str_errors += '<li>' + errors[error] + '</li>';
 	$('#error').html(str_errors + '</ol>').removeClass('hide').fadeIn('slow');
 }
-})
+
