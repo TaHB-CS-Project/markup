@@ -1,4 +1,27 @@
-    function subform(){
+$(document).ready(function(){
+    $("#myform").validate({
+        rules: {
+            "email":{
+                "required":true,
+                "email":true
+            },
+            "password":{
+                "required":true
+            }
+        },
+        messages:{   
+            password:{
+                required:"Please enter your password"
+            },
+            email:{
+                required:"Please enter your email"
+            },
+            submitHandler: subform
+        }
+    })
+   
+   
+   function subform(){
     var data=$("#login_form").serialize();
     $.ajax({
         type:'POST',
@@ -36,3 +59,4 @@ function displayErrors(errors) {
 	$('#error').html(str_errors + '</ol>').removeClass('hide').fadeIn('slow');
 }
 
+}) 

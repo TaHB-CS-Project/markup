@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	host     = "ec2-3-12-163-23.us-east-2.compute.amazonaws.com"
+	host     = "ec2-3-21-100-78.us-east-2.compute.amazonaws.com"
 	port     = 5432
 	user     = "postgres"
 	password = "password"
