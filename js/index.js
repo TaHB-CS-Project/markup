@@ -1,62 +1,29 @@
-$(document).ready(function(){
-    $("#myform").validate({
-        rules: {
-            "email":{
-                "required":true,
-                "email":true
-            },
-            "password":{
-                "required":true
-            }
-        },
-        messages:{   
-            password:{
-                required:"Please enter your password"
-            },
-            email:{
-                required:"Please enter your email"
-            },
-            submitHandler: subform
-        }
-    })
-   
-   
-   function subform(){
-    var data=$("#login_form").serialize();
-    $.ajax({
-        type:'POST',
-        url:'user.go'+'?rand=' +newDate().getTime(),
-        async:true,
-        dataType:"json",
-        data:{
-            username: $(`#email`).val(),
-            password_hash: $(`#password`).val()
-        },
-        beforeSend: function(){
-            $("#info").fadeOut();
-            $("#login").html("Please wait...");
-        },
-        success: function(jsonData){
-            if(jsonData.hasErrors){
-                displayErrors(jasonData.errors);
-            }
-            else{
-               alert(jsonData.confirm);
-               $("#info").html("<p style='color:blue; font-weight:bold'> Login Successful</p>");
-               displayLogin();
-            }
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown) {
-            $('#error').html(XMLHttpRequest.responseText).removeClass('hide').fadeIn('slow');
-
+$(document).ready(function() { 
+    console.log('page ready');
+    $('#btn_login').on('click',function(){
+        var email=$("#email").val();
+        var password=$("#password").val();
+        
+        if (email==""||password=="")
+            alert('Please write down your email and password');
+        else{
+            $.ajax(
+                {
+                    url:'user.go',
+                    method:'GET',
+                    data:{
+                        login:1, //key to check in the code
+                        username: email,
+                        password_hash: password
+                    },
+                    success:function(response){
+                        window.location='dashboard.html';
+                    },
+                    dataType:"text"
+                }
+            )
         }
     });
-}
-function displayErrors(errors) {
-	str_errors = '<p><strong>' + (errors.length > 1 ? more_errors : one_error) + '</strong></p><ol>';
-	for (var error in errors) 
-		if (error != 'indexOf') str_errors += '<li>' + errors[error] + '</li>';
-	$('#error').html(str_errors + '</ol>').removeClass('hide').fadeIn('slow');
-}
 
-}) 
+}); 
+
