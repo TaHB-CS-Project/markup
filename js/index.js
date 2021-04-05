@@ -1,41 +1,33 @@
 $(document).ready(function() { 
-    console.log('page ready');
-    $('#btn_login').on('click',function(){
+    $('#login_form').submit(function(event){
         event.preventDefault();
         var email=$("#email").val();
-        console.log(email);
         var password=$("#password").val();
-        console.log(password);    
+        var login_result= document.getElementById("login_result");
 
-        if (email==""||password=="")
-            alert('Please write down your email and password');
-        else{
-     
             $.ajax(  
                 {
-                    url:'http://127.0.0.1:8090/user1.go',   
-                    req: 'signin', 
+                    url:'http://127.0.0.1:8090/user1.go',    
                     type:"POST",   
                     dataType:"JSON", 
-                    data: JSON.stringify({Username: email, Password_hash: password}),
-                
-     
+                    data: JSON.stringify({"Username": email, "Password_hash": password}),
                     success:function(response){  
-                        console.log(response);    
-                        if(response == 'true'){
-                            window.location = "dashboard.html";
-                        }else{
-                            msg = "Invalid username and password!";
+                        login = JSON.stringify(response)
+                        if(login == '{"Correctcredentials":true}'){
+                            alert("Login Successful")
+                            window.location = "dashboard.html";                    
+                        }
+                        else if(login == '{"Incorrectcredentials":false}'){
+                            login_result.innerHTML = "<p>Your username or password is incorrect\nPlease try again</p>"
+                        }
+                        else{
+                            alert("Unexpected Error")
                         }
                     },
                    
                 }
             )
         }
-    });
+    );
 
 }); 
-
-
-
-
