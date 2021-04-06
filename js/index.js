@@ -15,19 +15,19 @@ $(document).ready(function() {
                         console.log(response);
                         login = JSON.stringify(response)
                         if(login == '{"Correctcredentials":true}'){
-                            if(login == '{"Correctcredentials":true}'){
+                   
                                 Swal.fire({
                                     icon: 'success',
                                     title: 'Welcome!',
                                 });
                              
                                 window.location = "dashboard.html";                     
-                        }
+                            }
                         else if(login == '{"Incorrectcredentials":false}'){
-                            login_result.innerHTML = "<p>Your username or password is incorrect\nPlease try again</p>"
+                            login_result.innerHTML = "<p>Your username or password is incorrect! \nPlease try again</p>"
                         }
                      
-            }
+            
                         else{
                             alert("Unexpected Error")
                         }
