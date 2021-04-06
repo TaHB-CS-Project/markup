@@ -7,7 +7,7 @@ $(document).ready(function() {
 
             $.ajax(  
                 {
-                    url:'/user1.go',    
+                    url:'http://127.0.0.1:8090/user1.go',    
                     type:"POST",   
                     dataType:"JSON", 
 <<<<<<< HEAD
