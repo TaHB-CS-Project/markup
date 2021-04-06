@@ -24,7 +24,7 @@ $(document).ready(function() {
                                 window.location = "dashboard.html";                     
                             }
                         else if(login == '{"Incorrectcredentials":false}'){
-                            login_result.innerHTML = "<p>Your username or password is incorrect! \nPlease try again</p>"
+                            login_result.innerHTML = "<p>Your username or password is incorrect!\nPlease try again</p>"
                         }
                      
             
