@@ -18,16 +18,36 @@ $(document).ready(function() {
                     type:"POST",   
                     dataType:"JSON", 
                     data: JSON.stringify({Username: email, Password_hash: password}),
-                
-     
-                    success:function(response){  
-                        console.log(response);    
-                        if(response == 'true'){
-                            window.location = "dashboard.html";
-                        }else{
-                            msg = "Invalid username and password!";
+                    
+                  
+                    success:function(response){
+                        console.log(Response);
+                        login = JSON.stringify(response)
+                        if(login == '{"Correctcredentials":true}'){
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Welcome!',
+                              
+                                
+                            });
+                         
+                            window.location = "dashboard.html";                
                         }
-                    },
+                        else if(login == '{"Incorrectcredentials":false}'){
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Invalid Username or Password',
+                                text: 'Please try again'
+                            });
+                            return;
+                        }
+                        else{
+                            alert("Unexpected Error")
+                        }
+
+
+                }
+
                    
                 }
             )
